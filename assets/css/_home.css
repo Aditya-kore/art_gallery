@@ -1,0 +1,173 @@
+/* import css files */
+@import url(./_fonts.css);
+@import url(./_slideshow.css);
+@import url(./_footer.css);
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(11, 20, 10, 0.719), rgba(11, 20, 10, 0.719)), url('assets/images/paint-2985569_1280.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-section{
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header-buttons a{
+    border: 0.1px solid #fff;
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 10px 30px;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+
+}
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #FFCCCD;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+.center-div p{
+    font-size: 1.6rem;
+    padding: 10px 0 10px 0;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+h1:hover {
+  text-shadow: 2px 2px #FF0000
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: normal 900 1rem var(--font-Rale);
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #99AEAD;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* --------------Products Section-----------*/
+.products-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+} 
+
+.products-container > div {
+  margin: 20px;
+  padding: 10px;
+  background-color:#064164;
+  box-shadow: 0px 1px 2px 1px #888888;
+} 
+
+	/* Add to Cart Button*/
+.small-button {
+  background-color: #B5FC49; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.small-button:hover {background-color: #3e8e41;}
+.small-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(1.5px);
+}
+
+main-list{display:-webkit-inline-flex;display:inline-flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;align-items:center;box-sizing:border-box;border-style:none;background:none;outline:none;text-transform:uppercase;font-weight:700;cursor:pointer;padding:0 12px;position:relative;overflow:hidden;line-height:normal;text-decoration:none}
